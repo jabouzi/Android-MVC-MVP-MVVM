@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".controller.MVCActivity">
+
+    <TextView
+        android:id="@+id/resultLabel"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text=""
+        style="@style/calculatorresult"/>
+
+    <GridLayout
+        android:id="@+id/numbersGrid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="24dp"
+        android:columnCount="4"
+        android:rowCount="4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultLabel">
+
+        <Button
+            style="@style/calculatorresetbutton"
+            android:onClick="onCellClicked"
+            android:tag="c"
+            android:text="c" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag=""
+            android:text=""
+            android:visibility="gone"/>
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag=""
+            android:text=""
+            android:visibility="gone"/>
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag=""
+            android:text=""
+            android:visibility="gone"/>
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="7"
+            android:text="7" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="8"
+            android:text="8" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="9"
+            android:text="9" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="÷"
+            android:text="÷" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="4"
+            android:text="4" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="5"
+            android:text="5" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="6"
+            android:text="6" />
+
+        <Button
+            style="@style/calculatormultbutton"
+            android:onClick="onCellClicked"
+            android:tag="x"
+            android:text="x" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="1"
+            android:text="1" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="2"
+            android:text="2" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="3"
+            android:text="3" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="-"
+            android:text="-" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="0"
+            android:text="0" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="."
+            android:text="." />
+
+        <Button
+            style="@style/calculatorresetbutton"
+            android:onClick="onCellClicked"
+            android:tag="="
+            android:text="=" />
+
+        <Button
+            style="@style/calculatorbutton"
+            android:onClick="onCellClicked"
+            android:tag="+"
+            android:text="+" />
+
+    </GridLayout>
+
+</android.support.constraint.ConstraintLayout>
